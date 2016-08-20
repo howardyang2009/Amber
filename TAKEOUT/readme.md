@@ -1,2 +1,2 @@
-Tack-Out Project
+Take-Out Project
 ================
