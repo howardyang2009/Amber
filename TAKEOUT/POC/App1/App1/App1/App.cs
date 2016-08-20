@@ -9,12 +9,14 @@ namespace App1
 {
     public class App : Application
     {
-        Button btn = new Button();
-        //App.btn.Text = "i am a button";
-
-
         public App()
         {
+            var btn = new Button();
+            btn.Text = "i am a button";
+            btn.Clicked += (sender, e) =>
+            {
+                btn.Text = "you clicked me, sir!!!";
+            };
             // The root page of your application
             MainPage = new ContentPage
             {
