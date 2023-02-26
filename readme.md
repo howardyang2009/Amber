@@ -1,20 +1,15 @@
-JobBank company
+# Path (P) GmbH
 
-1. base part
-1.1. Job bank
-collect jobs from hr website
-1.2. company could register hr requirement in our website
-1.3. person register time and skill, then other could find them
-1.4. person career consultation and review help
-1.5. college: training
+## Art Path (AP)
 
-good point: one stop solution to find job and find worker
+## Computer Path (CP)
 
+## Express Path (EP)
 
-2. NoInterestMoney
+## Finance Path (FP)
 
-3. HelpEachOther
+## Job Path (JP)
 
-4. Business
-4.1. Express
-4.2. Weaving
+## Medical Path (MP)
+
+## Help Each Other (HEO)
