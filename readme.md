@@ -1,6 +1,6 @@
 # Path (P) GmbH
 
-## Art Path (AP)
+## Art/Academic Path (AP)
 
 ## Computer Path (CP)
 
@@ -11,5 +11,7 @@
 ## Job Path (JP)
 
 ## Medical Path (MP)
+
+## Religion Path (RP)
 
 ## Help Each Other (HEO)
