@@ -24,10 +24,14 @@ Rico Widnann +49 162 4338615
 
 
 ## knowledge base
-### history and organization
-### current status and organization
-### main wisdom
-### culture and art 
-poem, music, movie
-### Participate in the community
-### other topics
+1. history and organization
+2. current status and organization
+3. main wisdom
+4. culture and art 
+	4.1. poem
+	4.2. motto
+	4.3. music
+	4.4. movie
+	4.5. book
+5. Participate in the community
+6. other topics
