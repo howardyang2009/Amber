@@ -27,7 +27,6 @@ friendly, equality, pease, seek common ground while reserving differentces
 	2.3. language: arabic, chinese, english, french, german, hindi, latin?, portuguese, russian, spanish
 
 ## resources
-- Rico Widnann +49 162 4338615
 - Current Pope Francis are very welcome different religions communication
 
 ## main religions
