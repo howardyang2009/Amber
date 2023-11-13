@@ -7,7 +7,7 @@ There still have Poverty, War, Depravity in the World, the solution should be Re
 Everyone in the World live with wisdom (Love, Abstinence, Happy)
 
 ## Culture
-friendly, pease, seek common ground while reserving differentces
+friendly, equality, pease, seek common ground while reserving differentces
 
 ## Method
 - all religions learn each other
@@ -18,15 +18,17 @@ friendly, pease, seek common ground while reserving differentces
 
 ## Steps
 0. Christianity communicate with Buddhism
-	0.1. Buddhism visit Christianity
-	0.2. Christianity visit Buddhism
+	0.1. Buddhism visit Christianity in Germany
+	0.2. Christianity visit Buddhism in China
 1. Annual meeting for all religions
 2. Journal of all religions share information
 	2.1. name: Wisdom Path
 	2.2. every three months
+	2.3. language: arabic, chinese, english, french, german, hindi, latin?, portuguese, russian, spanish
 
 ## resources
-Rico Widnann +49 162 4338615
+- Rico Widnann +49 162 4338615
+- Current Pope Francis are very welcome different religions communication
 
 ## main religions
 ### Christianity
@@ -51,3 +53,11 @@ Rico Widnann +49 162 4338615
 	4.5. book
 5. Participate in the community
 6. other topics
+
+## Reference
+1. https://www.vaticannews.va/zh/pope/news/2023-11/pope-francis-delegation-sikh-emirates-arab-poor-services.html
+2. https://www.vaticannews.va/zht/vatican-city/news/2018-09/zh-china-holy-see-agreement-catholic-church-vatican.html
+3. https://www.un.org/en/
+4. https://www.berlitz.com/en-de/blog/most-spoken-languages-world
+5. http://www.vaticannews.cn/zh/pope/news/2023-07/pope-franis-apostolic-visit-mongolia-logo-motto-schedule.html
+
