@@ -1,20 +1,26 @@
 # Religion Path (RP)
 
 ## Issue to solve
-There still have Poverty, War, Depravity in the World, the solution should be Religions.
+There still have Poverty, War, Depravity in the World
+Too much focus on the development of material science and technology, and insufficient investment in life wisdom and mental health
 
 ## Target
 Everyone in the World live with wisdom (Love, Abstinence, Happy)
 
 ## Culture
-friendly, equality, pease, seek common ground while reserving differentces
+friendly, equality, peace, seek common ground while reserving differenties
 
 ## Method
-- all religions learn each other
-- all religions communication each other
-- discuss how to enhance the all religions influence
-- discuss how to help more to community 
-- discuss how to spread all religions wisdom to more people and help every person more
+- All religions learn each other
+- All religions communicate each other
+- All religions cooperate each other
+- develop the all religions influence
+- help more to community
+- spread all religions wisdom to more people and help every person to live with dignity
+cooperate to solve the problem that people are facing now
+- Let people know us from TV, social media, activity(news), journal, poster in daily life
+- start from focusing on living with wisdom
+
 
 ## Steps
 0. Christianity communicate with Buddhism
@@ -56,7 +62,8 @@ friendly, equality, pease, seek common ground while reserving differentces
 ## Reference
 1. https://www.vaticannews.va/zh/pope/news/2023-11/pope-francis-delegation-sikh-emirates-arab-poor-services.html
 2. https://www.vaticannews.va/zht/vatican-city/news/2018-09/zh-china-holy-see-agreement-catholic-church-vatican.html
-3. https://www.un.org/en/
+3. https://www.un.org/zh/observances/interfaith-harmony-week
 4. https://www.berlitz.com/en-de/blog/most-spoken-languages-world
-5. http://www.vaticannews.cn/zh/pope/news/2023-07/pope-franis-apostolic-visit-mongolia-logo-motto-schedule.html
+5. https://unesdoc.unesco.org/ark:/48223/pf0000150328_chi
+6. http://www.vaticannews.cn/zh/pope/news/2023-07/pope-franis-apostolic-visit-mongolia-logo-motto-schedule.html
 
