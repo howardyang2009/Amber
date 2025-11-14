@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: osol-en.aux
+The style file: plainurl.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: reference.bib
+Warning--entry type for "role-internet-in-education" isn't style-file defined
+--line 11 of file reference.bib
+Warning--to sort, need author or key in serverless-web-app
+Warning--to sort, need author or key in internet-beneficial-students
+Warning--empty year in ai-in-education
+Warning--empty year in how-internet-beneficial-students
+Warning--empty year in education-change-life-world
+Warning--empty year in importance-reliable-internet-student
+Warning--empty year in unesco-education-ai
+Warning--empty year in unesco-education-transforms-lives
+You've used 14 entries,
+            2943 wiz_defined-function locations,
+            696 strings with 7557 characters,
+and the built_in function-call counts, 4310 in all, are:
+= -- 425
+> -- 65
+< -- 0
++ -- 28
+- -- 12
+* -- 149
+:= -- 528
+add.period$ -- 43
+call.type$ -- 14
+change.case$ -- 48
+chr.to.int$ -- 0
+cite$ -- 22
+duplicate$ -- 150
+empty$ -- 564
+format.name$ -- 12
+if$ -- 1250
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 1
+newline$ -- 74
+num.names$ -- 12
+pop$ -- 170
+preamble$ -- 1
+purify$ -- 40
+quote$ -- 0
+skip$ -- 354
+stack$ -- 0
+substring$ -- 99
+swap$ -- 14
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 50
+warning$ -- 8
+while$ -- 13
+width$ -- 16
+write$ -- 134
+(There were 9 warnings)

@@ -1,0 +1,32 @@
+\contentsline {section}{\numberline {1}What is One Student One Laptop(OSOL)?}{1}{section.1}%
+\contentsline {section}{\numberline {2}Why OSOL?}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Education would change one life}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Internet helped Education}{3}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Relevant Information Present on the Internet}{3}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Developing Communication and Connectivity}{3}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Collaborative Projects}{4}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Access to Online Courses and Certifications}{4}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Flexibility in Learning Environments}{4}{subsubsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.3}GPT helped Education}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Resources}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}One Laptop per Child}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}World Computer Exchange}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Windows 11 24H2 update}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}UNESCO}{5}{subsection.3.4}%
+\contentsline {section}{\numberline {4}What Riverty and Bertelsmann will get?}{5}{section.4}%
+\contentsline {section}{\numberline {5}How OLPC?}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}one IT equipment lifecycle}{5}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}OLPC IT equipment stages}{5}{subsubsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.2}use 2D barcode to trace the equipement stage}{5}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}IT equipment score}{5}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Annual check}{5}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}OLPC Tracer - OLPC Data Management System}{5}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}OLPC-T Architecture}{5}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}OLPC-T Database - relation database - MS Azure SQL Server}{5}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.3}OLPC-T API - MS Azure Function }{5}{subsubsection.5.5.3}%
+\contentsline {subsubsection}{\numberline {5.5.4}OLPC-T API Management }{5}{subsubsection.5.5.4}%
+\contentsline {subsubsection}{\numberline {5.5.5}OLPC-T GUI}{5}{subsubsection.5.5.5}%
+\contentsline {subsection}{\numberline {5.6}Riverty Computer Pool(RCP)}{7}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Schedule}{7}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Step 1}{7}{subsection.6.1}%
+\contentsline {section}{\numberline {A}Why we use queue in OLPC-T architecture?}{8}{appendix.A}%

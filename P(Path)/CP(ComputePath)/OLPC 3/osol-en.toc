@@ -1,0 +1,49 @@
+\contentsline {section}{\numberline {1}What is One Student One Laptop(OSOL)?}{1}{section.1}%
+\contentsline {section}{\numberline {2}Why OSOL?}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Education would change one life}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Internet helped Education}{2}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Relevant Information Present on the Internet}{2}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Developing Communication and Connectivity}{3}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Collaborative Projects}{3}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Access to Online Courses and Certifications}{3}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Flexibility in Learning Environments}{4}{subsubsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.3}GPT helped Education}{4}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Personalised learning}{4}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}24*7 assistance with conversational AI}{4}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Homework Help}{4}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Helping with the tasks}{4}{subsubsection.2.3.4}%
+\contentsline {section}{\numberline {3}Related Projects}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}One Laptop Per Child}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}World Computer Exchange}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}UNESCO}{6}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Why does UNESCO consider digital innovation in education important?}{6}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}What is the role of Artificial Intelligence in education and how does UNESCO support it?}{6}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Windows 11 24H2 update}{7}{subsection.3.4}%
+\contentsline {section}{\numberline {4}What OSOL will benfit to Riverty and Bertelsmann?}{7}{section.4}%
+\contentsline {section}{\numberline {5}How OSOL?}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}One IT equipment lifecycle}{8}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Equipment stages}{8}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Equipment score}{8}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Equipment annual check}{8}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}OSOL 2D barcode on IT equipment}{8}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Stage0 2D barcode data}{8}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Stage1 2D barcode data}{9}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Stage2 2D barcode data}{11}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Stage3 2D barcode data}{12}{subsubsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.3}OSOL preinstalled education content}{12}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Math-desmos}{12}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}OpenAI ChatGPT}{12}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Google Gemini}{12}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}ResearchGate}{12}{subsubsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.4}OSOL Tracer - OSOL Data Management System}{12}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}OSOL-T Architecture}{12}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}OSOL-T Database}{12}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}OSOL-T API}{13}{subsubsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.4}OSOL-T API Management }{13}{subsubsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.5}OSOL-T GUI}{14}{subsubsection.5.4.5}%
+\contentsline {subsection}{\numberline {5.5}Riverty Computer Center(RCC)}{14}{subsection.5.5}%
+\contentsline {section}{\numberline {6}When OSOL - Schedule}{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Step 1}{14}{subsection.6.1}%
+\contentsline {section}{\numberline {7}OSOL Budget }{14}{section.7}%
+\contentsline {section}{\numberline {A}OSOL-T Database metadata}{14}{appendix.A}%
+\contentsline {section}{\numberline {B}OSOL-T architecture - why use queue?}{14}{appendix.B}%

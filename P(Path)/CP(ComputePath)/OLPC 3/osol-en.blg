@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: osol-en.aux
+The style file: plainurl.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: reference.bib
+Warning--to sort, need author or key in why-student-must-internet-access
+Warning--to sort, need author or key in internet-beneficial-students
+Warning--empty year in education-change-life-world
+Warning--empty year in unesco-education-transforms-lives
+You've used 4 entries,
+            2943 wiz_defined-function locations,
+            647 strings with 5816 characters,
+and the built_in function-call counts, 1135 in all, are:
+= -- 104
+> -- 8
+< -- 0
++ -- 5
+- -- 0
+* -- 42
+:= -- 136
+add.period$ -- 10
+call.type$ -- 4
+change.case$ -- 12
+chr.to.int$ -- 0
+cite$ -- 8
+duplicate$ -- 44
+empty$ -- 161
+format.name$ -- 0
+if$ -- 335
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 0
+newline$ -- 21
+num.names$ -- 0
+pop$ -- 50
+preamble$ -- 1
+purify$ -- 10
+quote$ -- 0
+skip$ -- 96
+stack$ -- 0
+substring$ -- 23
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 14
+warning$ -- 4
+while$ -- 0
+width$ -- 5
+write$ -- 34
+(There were 4 warnings)
