@@ -8,10 +8,12 @@
 
 ## Finance Path (FP)
 
+## Integrity Path (IP)
+
 ## Job Path (JP)
 
 ## Medical Path (MP)
 
-## Religion Path (RP)
+## Rhein Weg (RP)
 
 ## Help Each Other (HEO)
