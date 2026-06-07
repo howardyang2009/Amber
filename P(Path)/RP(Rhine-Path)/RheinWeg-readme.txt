@@ -52,7 +52,11 @@ https://www.gelbeseiten.de/branchen/krankenpflege/oberursel%20taunus
 Oberursel_krankenpflege_2.xlsx
 ;Email;geschaeftsstelle@caritas-hochtaunus.de;belchiorsozialzentrum@yahoo.de;info@cura-medis.de;info@sam-pflege.de;info@sitzwache-pflegedienst.de;info@sozialzentrum-eschborn.de;kontakt@diakonie-eschborn.de;ingutenhaenden@gmx.net;kontakt@diakonie-eschborn.de;info@besko.de;kontakt@diakonie-eschborn.de;info@pflege-expert.de;kontakt@phv-dialyse.de;altkoenigstrasse@korian.de;info@avevitapd.de;kontakt@casa-mea.com;info@ne-pflegedienst.de;hochtaunuskreis@homeinstead.de;info@sam-pflege.de;info@gda.de;bhg-info@kurstifte.de;waldemarweit@yahoo.com;pflegedienst-diehl@t-online.de;kirchnerm2000@yahoo.de;clinopolis@gmx.de;kontakt@diakonie-eschborn.de;rhikid@gmx.de;rhikid@gmx.de;pflegedienst@ulmo.eu;info@pflegeundhilfedaheim.de;senioren-friedrichsdorf@awo-hs.org;ambrella.pflegedienst@t-online.de;info@medax-pflegedienst.de;pflege@mpt-schwalbach.de;geschaeftsstelle@evim.de;
 
-apotheke/arzt/elektriker/ferienwohnung/hotel/restaurant/schreiner/friseur/krankenpflege
+https://www.gelbeseiten.de/branchen/taxi/oberursel%20taunus
+Oberursel_taxi.xlsx
+;Email;info@taxi-bad-homburg.de;taxigondaloberursel@gmail.com;taunusmietwagen@mail.de;info@premiumtaxioberursel.com;sc@taximoto.de;taxigaborhg@googlemail.com;taxi1@ok.de;info@hg-taxi.de;taxi-albert@t-online.de;barispamuk78@gmail.com;Taxi.Helmut.Doepfer@t-online.de;taxiullah@gmail.com;info@taxieschborn.de;taxischutz.oberursel@aol.de;taxi-albert@t-online.de;taxi-adler@hotmail.de;fz@fahrservicezentrale.de;ozan.akbi@gmail.com;order@taxizuber.de;Kontakt@yourshuttlebadhomburg.de;mail@limes-taxi.de;info@taxi22100.de;adnan.bhatti@ok.de;info@taxialican.de;Info@badhomburg-taxi.de;mail@taxi-oezdemir.de;taxishaikh@googlemail.com;taxi@taxiguelmez.de;info@taxi-friedrichsdorf.com;info@taxi-akon.de;info@taxibadhomburg.de;naimsilik69@googlemail.com;info@shuttle2airport.com;taxi-taunus@hotmail.com;junghenn_ulrich@gmx.de;taxim24@t-online.de;info@taxizentrale-haq.de;info@mtf-eschborn.de;info@taxiruf-eschborn.de;order@taxizuber.de;taxi-breitkopf@t-online.de;info@taximex.de;Info@flattransfer.de;info@deinshuttle.de;info@taunus-fahrservice.de
+
+apotheke/arzt/elektriker/ferienwohnung/hotel/restaurant/schreiner/friseur/krankenpflege/taxi
 
 Google Workspace
 rheinwegde.com
@@ -63,7 +67,7 @@ rheinweg
 u5441102463@id.gle
 Yyl20090813$
 rheinwegde@gmail.com
-Google Cloud are using this rheinwegde@gmail.com account
+Google Cloud are using this rheinwegde@gmail.com account–
 
 
 OpenClaw
