@@ -56,7 +56,14 @@ https://www.gelbeseiten.de/branchen/taxi/oberursel%20taunus
 Oberursel_taxi.xlsx
 ;Email;info@taxi-bad-homburg.de;taxigondaloberursel@gmail.com;taunusmietwagen@mail.de;info@premiumtaxioberursel.com;sc@taximoto.de;taxigaborhg@googlemail.com;taxi1@ok.de;info@hg-taxi.de;taxi-albert@t-online.de;barispamuk78@gmail.com;Taxi.Helmut.Doepfer@t-online.de;taxiullah@gmail.com;info@taxieschborn.de;taxischutz.oberursel@aol.de;taxi-albert@t-online.de;taxi-adler@hotmail.de;fz@fahrservicezentrale.de;ozan.akbi@gmail.com;order@taxizuber.de;Kontakt@yourshuttlebadhomburg.de;mail@limes-taxi.de;info@taxi22100.de;adnan.bhatti@ok.de;info@taxialican.de;Info@badhomburg-taxi.de;mail@taxi-oezdemir.de;taxishaikh@googlemail.com;taxi@taxiguelmez.de;info@taxi-friedrichsdorf.com;info@taxi-akon.de;info@taxibadhomburg.de;naimsilik69@googlemail.com;info@shuttle2airport.com;taxi-taunus@hotmail.com;junghenn_ulrich@gmx.de;taxim24@t-online.de;info@taxizentrale-haq.de;info@mtf-eschborn.de;info@taxiruf-eschborn.de;order@taxizuber.de;taxi-breitkopf@t-online.de;info@taximex.de;Info@flattransfer.de;info@deinshuttle.de;info@taunus-fahrservice.de
 
-apotheke/arzt/elektriker/ferienwohnung/hotel/restaurant/schreiner/friseur/krankenpflege/taxi
+https://www.gelbeseiten.de/branchen/maler/oberursel%20taunus
+Oberursel_maler.xlsx
+;Email;k.bellmer@arcor.de;maler.maus@gmx.de;filipovicm@hotmail.de;kontakt@bohnholzbau.de;info@jakob-messerschmidt.de;objektgestaltung.thomas@t-online.de;malerbetrieb.metzler@gmx.de;badhomburg@engel-jung.de;malergrella@online.de;info@dergeheimtipp.com;renovierung-c.i@mail.de;info@col-baudekoration.de;info@d2p.de;reichert-paint@t-online.de;info@maler-braunroth.de;eberhardt-malermeister@web.de;malerwienhold@googlemail.com;info@mps-innendesign.com;klaus.schudt@gmail.com;simhony@t-online.de;willigirold@onlinehome.de;info@merkel-baudekoration.de;maler.staubach@t-online.de;info-eb@meg.de;info@kundys-bau.com;andreas.udo.meyer@web.de;birkenfeld-maler@arcor.de;Info@cs-abbruch-schadstoff-sanieren.de;maler-meier@t-online.de;fhenrichs@aol.com;Steve.h@arcor.de;info@pulverbau.de;weber_maler@hotmail.com;irekpurgal@gmail.com;info@malermeisterernst.de;info@altintas-kuehn.de;roman@malermeister-kusch.de;info@maler-wehrheim.de;info@merkel-baudekoration.de;maler.zoder@t-online.de;info@Maurer-Kronberg.de;info@froehlich-malermeister.de;info@nasse-baudeko.de;malermeister@alt-praunheim.de;malerbetrieb-horlacher@t-online.de;wodro-gbr@gmx.de;stefan.contzen@t-online.de;info@holzinger-maler.de;l.ion@list.ru;kontakt@farbhey.de;maler@miksch-und-seip.de;kontakt@mp-bau.com;post@malerbetrieb-kuhn.de;service@farbdeko.de;info-eb@meg.de;info@baudekoration-mann.de;firmamarvi@gmail.com;lebensraum-ffm@web.de;info@pk-ausbau.de;info@raumausstattung-ebner-kronberg.de;matrofaylo.k@gmx.de;geschaeftsstelle@pw-ffm.de
+
+
+apotheke/arzt/elektriker/ferienwohnung/hotel/restaurant/schreiner/friseur/krankenpflege/taxi/maler
+
+https://www.gelbeseiten.de/branchenbuch/staedte/hessen/hochtaunuskreis
 
 Google Workspace
 rheinwegde.com
