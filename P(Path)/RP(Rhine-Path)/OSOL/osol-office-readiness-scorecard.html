@@ -1,8 +1,9 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html><head><meta charset="utf8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Office-Readiness Scorecard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
 <style>
   :root{
     --bg:#eef1f5;
@@ -103,7 +104,7 @@
   }
 
   /* bar / calibration */
-  .bar-panel{padding:20px 22px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:22px;align-items:end}
+  .bar-panel{padding:20px 22px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:22px;align-items:start}
   .field{display:flex;flex-direction:column;gap:6px;min-width:0}
   .field label{font-size:12.5px;font-weight:600;color:var(--ink-soft)}
   .field .hint{font-size:11.5px;color:var(--ink-faint);font-family:var(--sans)}
@@ -233,7 +234,7 @@
     <div class="panel bar-panel">
       <div class="field wide">
         <label for="refScore">Reference single-core score</label>
-        <input class="mono" id="refScore" type="number" inputmode="numeric" value="1800">
+        <input class="mono" id="refScore" type="number" inputmode="numeric" value="1000">
         <span class="hint">Geekbench 7 single-core of a machine you <em>know</em> feels fine today.</span>
       </div>
       <div class="field">
@@ -246,9 +247,9 @@
         <span class="hint">% harder each year (~10–15 typical).</span>
       </div>
       <div class="bar-readout">
-        <div class="metric"><span>Bar this year</span><strong id="barNow">1800</strong></div>
+        <div class="metric"><span>Bar this year</span><strong id="barNow">1000</strong></div>
         <div class="arrow">→</div>
-        <div class="metric"><span id="barNextLab">Bar in 2027</span><strong id="barNext">2016</strong></div>
+        <div class="metric"><span id="barNextLab">Bar in 2027</span><strong id="barNext">1120</strong></div>
         <p class="note">A machine at <b>100</b> exactly meets today's bar. Below 80, it will feel slow for the newest software; re-check the bar the day your reference machine starts to drag.</p>
       </div>
     </div>
@@ -256,10 +257,11 @@
 
   <section>
     <div class="sec-head"><h2>2 · Machines</h2><span class="rule"></span></div>
-    <div class="machines" id="machines"></div>
+    <div class="machines" id="machines"><div class="panel machine"><div class="m-top"><input class="name txt" data-k="name" data-i="0" value="Mac mini - A2686" placeholder="Machine name"><button class="m-remove" data-rm="0" title="Remove">×</button></div><div class="m-os-row"><label class="os-lab">OS</label><select class="os" data-k="os" data-i="0"><option selected="">macOS</option><option>Debian</option><option>Windows</option><option>ChromeOS Flex</option><option>Other</option></select></div><div class="m-verdict"><div class="index-dial"><div class="index-num" style="color: var(--good);">246</div><div class="index-lab">index</div></div><div class="v-right"><span class="pill v-pill good"><span class="dot"></span>Ready</span><div class="track"><div class="fill" style="width: 100%; background: var(--good);"></div><div class="mark" style="left:71.42857142857143%"></div></div><div class="track-cap"><span>0</span><span>100 = bar</span><span>140+</span></div></div></div><div class="m-fields"><div class="field full"><label>Serial number <span class="ref-tag">reference only</span></label><input class="mono" data-k="serial" data-i="0" type="text" autocomplete="off" placeholder="e.g. C02XL0AAJGH5" value="DV46JKJRHH"><span class="hint">For your own inventory — not counted in the readiness index.</span></div><div class="field"><label>Geekbench 7 single-core</label><input class="mono" data-k="single" data-i="0" type="text" inputmode="numeric" autocomplete="off" value="2456"></div><div class="field"><label>Multi-core (optional)</label><input class="mono" data-k="multi" data-i="0" type="text" inputmode="numeric" autocomplete="off" value="10374"></div><div class="field full"><label>GPU · Geekbench 7 <span class="ref-tag">reference only</span></label><input class="mono" data-k="gpu" data-i="0" type="text" inputmode="numeric" autocomplete="off" value="43690 (metel)"><span class="hint">Not counted in the readiness index — kept for your Apple-vs-NVIDIA GPU comparison later.</span></div></div><div class="ssd-row"><span class="ssd-lab">SSD · fio 4K read</span><input style="width:96px" class="mono" data-k="read" data-i="0" type="text" inputmode="decimal" autocomplete="off" value="62.3"><span class="unit" style="font-family:var(--mono);font-size:11px;color:var(--ink-faint)">MB/s</span><span class="pill ssd-pill good"><span class="dot"></span>Fast SSD</span></div></div><div class="panel machine"><div class="m-top"><input class="name txt" data-k="name" data-i="1" value="Thinkpad x200" placeholder="Machine name"><button class="m-remove" data-rm="1" title="Remove">×</button></div><div class="m-os-row"><label class="os-lab">OS</label><select class="os" data-k="os" data-i="1"><option>macOS</option><option selected="">Debian</option><option>Windows</option><option>ChromeOS Flex</option><option>Other</option></select></div><div class="m-verdict"><div class="index-dial"><div class="index-num" style="color: var(--crit);">41</div><div class="index-lab">index</div></div><div class="v-right"><span class="pill v-pill crit"><span class="dot"></span>Below bar</span><div class="track"><div class="fill" style="width: 29.2857%; background: var(--crit);"></div><div class="mark" style="left:71.42857142857143%"></div></div><div class="track-cap"><span>0</span><span>100 = bar</span><span>140+</span></div></div></div><div class="m-fields"><div class="field full"><label>Serial number <span class="ref-tag">reference only</span></label><input class="mono" data-k="serial" data-i="1" type="text" autocomplete="off" placeholder="e.g. C02XL0AAJGH5" value="7458D12LV02FZ5"><span class="hint">For your own inventory — not counted in the readiness index.</span></div><div class="field"><label>Geekbench 7 single-core</label><input class="mono" data-k="single" data-i="1" type="text" inputmode="numeric" autocomplete="off" value="411"></div><div class="field"><label>Multi-core (optional)</label><input class="mono" data-k="multi" data-i="1" type="text" inputmode="numeric" autocomplete="off" value="678"></div><div class="field full"><label>GPU · Geekbench 7 <span class="ref-tag">reference only</span></label><input class="mono" data-k="gpu" data-i="1" type="text" inputmode="numeric" autocomplete="off" value="122 (opengl)"><span class="hint">Not counted in the readiness index — kept for your Apple-vs-NVIDIA GPU comparison later.</span></div></div><div class="ssd-row"><span class="ssd-lab">SSD · fio 4K read</span><input style="width:96px" class="mono" data-k="read" data-i="1" type="text" inputmode="decimal" autocomplete="off" value="27.1"><span class="unit" style="font-family:var(--mono);font-size:11px;color:var(--ink-faint)">MB/s</span><span class="pill ssd-pill warn"><span class="dot"></span>Basic SSD</span></div></div><div class="panel machine"><div class="m-top"><input class="name txt" data-k="name" data-i="2" value="HP Pavilion 15-p100na" placeholder="Machine name"><button class="m-remove" data-rm="2" title="Remove">×</button></div><div class="m-os-row"><label class="os-lab">OS</label><select class="os" data-k="os" data-i="2"><option>macOS</option><option>Debian</option><option>Windows</option><option selected="">ChromeOS Flex</option><option>Other</option></select></div><div class="m-verdict"><div class="index-dial"><div class="index-num" style="color: var(--warn);">98</div><div class="index-lab">index</div></div><div class="v-right"><span class="pill v-pill warn"><span class="dot"></span>Aging</span><div class="track"><div class="fill" style="width: 70%; background: var(--warn);"></div><div class="mark" style="left:71.42857142857143%"></div></div><div class="track-cap"><span>0</span><span>100 = bar</span><span>140+</span></div></div></div><div class="m-fields"><div class="field full"><label>Serial number <span class="ref-tag">reference only</span></label><input class="mono" data-k="serial" data-i="2" type="text" autocomplete="off" placeholder="e.g. C02XL0AAJGH5" value="5CD43935WN"><span class="hint">For your own inventory — not counted in the readiness index.</span></div><div class="field"><label>Geekbench 7 single-core</label><input class="mono" data-k="single" data-i="2" type="text" inputmode="numeric" autocomplete="off" value="983"></div><div class="field"><label>Multi-core (optional)</label><input class="mono" data-k="multi" data-i="2" type="text" inputmode="numeric" autocomplete="off" value="1833"></div><div class="field full"><label>GPU · Geekbench 7 <span class="ref-tag">reference only</span></label><input class="mono" data-k="gpu" data-i="2" type="text" inputmode="numeric" autocomplete="off" value=""><span class="hint">Not counted in the readiness index — kept for your Apple-vs-NVIDIA GPU comparison later.</span></div></div><div class="ssd-row"><span class="ssd-lab">SSD · fio 4K read</span><input style="width:96px" class="mono" data-k="read" data-i="2" type="text" inputmode="decimal" autocomplete="off" value=""><span class="unit" style="font-family:var(--mono);font-size:11px;color:var(--ink-faint)">MB/s</span><span class="pill ssd-pill mut"><span class="dot"></span>—</span></div></div><div class="panel machine"><div class="m-top"><input class="name txt" data-k="name" data-i="3" value="Macbook Pro - A2159" placeholder="Machine name"><button class="m-remove" data-rm="3" title="Remove">×</button></div><div class="m-os-row"><label class="os-lab">OS</label><select class="os" data-k="os" data-i="3"><option selected="">macOS</option><option>Debian</option><option>Windows</option><option>ChromeOS Flex</option><option>Other</option></select></div><div class="m-verdict"><div class="index-dial"><div class="index-num" style="color: var(--good);">101</div><div class="index-lab">index</div></div><div class="v-right"><span class="pill v-pill good"><span class="dot"></span>Ready</span><div class="track"><div class="fill" style="width: 72.1429%; background: var(--good);"></div><div class="mark" style="left:71.42857142857143%"></div></div><div class="track-cap"><span>0</span><span>100 = bar</span><span>140+</span></div></div></div><div class="m-fields"><div class="field full"><label>Serial number <span class="ref-tag">reference only</span></label><input class="mono" data-k="serial" data-i="3" type="text" autocomplete="off" placeholder="e.g. C02XL0AAJGH5" value="C02Z4C37L40Y"><span class="hint">For your own inventory — not counted in the readiness index.</span></div><div class="field"><label>Geekbench 7 single-core</label><input class="mono" data-k="single" data-i="3" type="text" inputmode="numeric" autocomplete="off" value="1010"></div><div class="field"><label>Multi-core (optional)</label><input class="mono" data-k="multi" data-i="3" type="text" inputmode="numeric" autocomplete="off" value="2608"></div><div class="field full"><label>GPU · Geekbench 7 <span class="ref-tag">reference only</span></label><input class="mono" data-k="gpu" data-i="3" type="text" inputmode="numeric" autocomplete="off" value="7646 (metal)"><span class="hint">Not counted in the readiness index — kept for your Apple-vs-NVIDIA GPU comparison later.</span></div></div><div class="ssd-row"><span class="ssd-lab">SSD · fio 4K read</span><input style="width:96px" class="mono" data-k="read" data-i="3" type="text" inputmode="decimal" autocomplete="off" value="25.3"><span class="unit" style="font-family:var(--mono);font-size:11px;color:var(--ink-faint)">MB/s</span><span class="pill ssd-pill warn"><span class="dot"></span>Basic SSD</span></div></div></div>
     <div class="actions">
       <button class="btn ghost" id="addBtn">+ Add machine</button>
       <button class="btn primary" id="saveBtn">Save</button>
+      <button class="btn" id="downloadBtn">Download updated .html</button>
       <span class="save-note" id="saveNote">Saved in this browser</span>
     </div>
     <div class="save-toast" id="saveToast" role="status" aria-live="polite">
@@ -296,12 +298,48 @@
   var KEY="office-readiness-v1";
   var OSES=["macOS","Debian","Windows","ChromeOS Flex","Other"];
   var example={
-    ref:1800, baseYear:2026, creep:12,
-    machines:[
-      {name:"Mac mini (M-series)", os:"macOS",  serial:"C02XL0AAJGH5", single:2650, multi:9800, gpu:31500, read:72},
-      {name:"Debian laptop (older)", os:"Debian", serial:"PF-2K8HR3", single:1400, multi:4200, gpu:8200, read:22}
-    ]
-  };
+  "ref": "1000",
+  "baseYear": 2026,
+  "creep": 12,
+  "machines": [
+    {
+      "name": "Mac mini - A2686",
+      "os": "macOS",
+      "serial": "DV46JKJRHH",
+      "single": "2456",
+      "multi": "10374",
+      "gpu": "43690 (metel)",
+      "read": "62.3"
+    },
+    {
+      "name": "Thinkpad x200",
+      "os": "Debian",
+      "serial": "7458D12LV02FZ5",
+      "single": "411",
+      "multi": "678",
+      "gpu": "122 (opengl)",
+      "read": "27.1"
+    },
+    {
+      "name": "HP Pavilion 15-p100na",
+      "os": "ChromeOS Flex",
+      "serial": "5CD43935WN",
+      "single": "983",
+      "multi": "1833",
+      "gpu": "",
+      "read": ""
+    },
+    {
+      "name": "Macbook Pro - A2159",
+      "os": "macOS",
+      "serial": "C02Z4C37L40Y",
+      "single": "1010",
+      "multi": "2608",
+      "gpu": "7646 (metal)",
+      "read": "25.3"
+    }
+  ]
+};
   var state=load();
 
   function load(){
@@ -462,6 +500,43 @@
     state.machines.push({name:"New machine",os:"Debian",serial:"",single:"",multi:"",gpu:"",read:""});render();
   });
   document.getElementById("saveBtn").addEventListener("click",persist);
+  document.getElementById("downloadBtn").addEventListener("click",exportHtml);
+
+  // Build a copy of this page with the current data baked in as the new
+  // default (so opening the downloaded file — even with no localStorage —
+  // shows your latest data), then trigger a browser download of it.
+  function exportHtml(){
+    document.getElementById("refScore").setAttribute("value",state.ref);
+    document.getElementById("baseYear").setAttribute("value",state.baseYear);
+    document.getElementById("creep").setAttribute("value",state.creep);
+
+    var clone=document.documentElement.cloneNode(true);
+    clone.querySelectorAll('#machines [data-i]').forEach(function(inp){
+      var i=+inp.dataset.i,k=inp.dataset.k,m=state.machines[i];
+      if(inp.tagName==="SELECT"){
+        Array.prototype.forEach.call(inp.options,function(o){
+          if(o.value===m[k])o.setAttribute("selected","");else o.removeAttribute("selected");
+        });
+      }else{
+        inp.setAttribute("value",m[k]==null?"":m[k]);
+      }
+    });
+
+    var scriptEl=clone.querySelector("script");
+    scriptEl.textContent=scriptEl.textContent.replace(
+      /var example=\{[\s\S]*?\n\s*\};/,
+      "var example="+JSON.stringify(state,null,2)+";"
+    );
+
+    var html="<!doctype html>\n"+clone.outerHTML;
+    var blob=new Blob([html],{type:"text/html"});
+    var a=document.createElement("a");
+    a.href=URL.createObjectURL(blob);
+    a.download="osol-office-readiness-scorecard.html";
+    document.body.appendChild(a);a.click();document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
+    flash("Downloaded with current data");
+  }
 
   // init control values from state
   document.getElementById("refScore").value=state.ref;
