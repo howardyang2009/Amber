@@ -1,0 +1,474 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Office-Readiness Scorecard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --bg:#eef1f5;
+    --panel:#ffffff;
+    --panel-2:#f6f8fb;
+    --ink:#171b22;
+    --ink-soft:#4b5563;
+    --ink-faint:#79828f;
+    --line:#dde2ea;
+    --line-strong:#c7cfdb;
+    --accent:#1f6feb;
+    --accent-soft:#e7f0ff;
+    --good:#1f9d57;
+    --good-soft:#e3f4ea;
+    --warn:#b7791f;
+    --warn-soft:#f8efd9;
+    --crit:#d0453f;
+    --crit-soft:#fae5e4;
+    --shadow:0 1px 2px rgba(20,28,44,.06),0 8px 24px -12px rgba(20,28,44,.18);
+    --radius:14px;
+    --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  }
+  :root:not([data-theme="light"]){
+    @media (prefers-color-scheme: dark){
+      --bg:#0e1117;
+      --panel:#161b24;
+      --panel-2:#1b2029;
+      --ink:#e8ecf3;
+      --ink-soft:#aab3c1;
+      --ink-faint:#78828f;
+      --line:#262d38;
+      --line-strong:#333c49;
+      --accent:#589bff;
+      --accent-soft:#16233b;
+      --good:#4ec98a;
+      --good-soft:#132a1f;
+      --warn:#e0b155;
+      --warn-soft:#2c2413;
+      --crit:#f0736c;
+      --crit-soft:#2e1717;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0e1117;
+    --panel:#161b24;
+    --panel-2:#1b2029;
+    --ink:#e8ecf3;
+    --ink-soft:#aab3c1;
+    --ink-faint:#78828f;
+    --line:#262d38;
+    --line-strong:#333c49;
+    --accent:#589bff;
+    --accent-soft:#16233b;
+    --good:#4ec98a;
+    --good-soft:#132a1f;
+    --warn:#e0b155;
+    --warn-soft:#2c2413;
+    --crit:#f0736c;
+    --crit-soft:#2e1717;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.6);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:var(--sans);line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:32px 22px 72px}
+
+  /* header */
+  .eyebrow{
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--accent);font-weight:600;margin:0 0 10px;
+  }
+  h1{
+    font-size:clamp(26px,4vw,40px);line-height:1.08;font-weight:700;margin:0;
+    letter-spacing:-.02em;text-wrap:balance;
+  }
+  .lede{
+    margin:12px 0 0;max-width:60ch;color:var(--ink-soft);font-size:16px;
+  }
+  .lede b{color:var(--ink);font-weight:600}
+
+  section{margin-top:26px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin:0 0 14px}
+  .sec-head h2{
+    font-size:13px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;
+    font-weight:600;margin:0;color:var(--ink-faint);
+  }
+  .sec-head .rule{flex:1;height:1px;background:var(--line)}
+
+  .panel{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);
+  }
+
+  /* bar / calibration */
+  .bar-panel{padding:20px 22px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:22px;align-items:end}
+  .field{display:flex;flex-direction:column;gap:6px;min-width:0}
+  .field label{font-size:12.5px;font-weight:600;color:var(--ink-soft)}
+  .field .hint{font-size:11.5px;color:var(--ink-faint);font-family:var(--sans)}
+  input,select{
+    font-family:var(--mono);font-size:15px;color:var(--ink);
+    background:var(--panel-2);border:1px solid var(--line-strong);border-radius:9px;
+    padding:9px 11px;width:100%;transition:border-color .15s,box-shadow .15s;
+  }
+  input:focus,select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  input.txt{font-family:var(--sans);font-weight:500}
+  select{cursor:pointer;-webkit-appearance:none;appearance:none;
+    background-image:linear-gradient(45deg,transparent 50%,var(--ink-faint) 50%),linear-gradient(135deg,var(--ink-faint) 50%,transparent 50%);
+    background-position:calc(100% - 18px) 51%,calc(100% - 13px) 51%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:32px;
+  }
+  .bar-readout{
+    grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;
+    border-top:1px dashed var(--line-strong);padding-top:16px;margin-top:2px;
+  }
+  .bar-readout .metric{display:flex;flex-direction:column}
+  .bar-readout .metric span{font-size:11.5px;color:var(--ink-faint);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+  .bar-readout .metric strong{font-family:var(--mono);font-size:22px;font-weight:600;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+  .bar-readout .arrow{color:var(--ink-faint);font-size:20px;align-self:center;padding-top:14px}
+  .bar-readout .note{font-size:12.5px;color:var(--ink-soft);flex:1;min-width:200px}
+
+  /* machines */
+  .machines{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+  .machine{padding:0;overflow:hidden;display:flex;flex-direction:column}
+  .m-top{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line);background:var(--panel-2)}
+  .m-top .name{flex:1;min-width:0;font-family:var(--sans);font-weight:600;font-size:15px;background:transparent;border:1px solid transparent;padding:6px 8px}
+  .m-top .name:hover{border-color:var(--line-strong)}
+  .m-remove{
+    border:1px solid var(--line-strong);background:var(--panel);color:var(--ink-faint);
+    width:30px;height:30px;border-radius:8px;cursor:pointer;font-size:16px;line-height:1;flex:none;
+    display:flex;align-items:center;justify-content:center;transition:.15s;
+  }
+  .m-remove:hover{color:var(--crit);border-color:var(--crit)}
+
+  /* OS selector — its own row so it never crowds the machine name */
+  .m-os-row{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:1px solid var(--line);background:var(--panel-2)}
+  .m-os-row .os-lab{font-size:12px;font-weight:600;color:var(--ink-soft);flex:none}
+  .m-os-row .os{flex:1;min-width:0;font-family:var(--sans);font-size:13px;padding:7px 30px 7px 10px}
+
+  .m-verdict{padding:18px 16px 16px;display:flex;gap:16px;align-items:center;border-bottom:1px solid var(--line)}
+  .index-dial{flex:none;width:96px;text-align:center}
+  .index-num{font-family:var(--mono);font-size:38px;font-weight:600;line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .index-lab{font-size:10.5px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);margin-top:3px}
+  .v-right{flex:1;min-width:0;display:flex;flex-direction:column;gap:9px}
+  .pill{
+    display:inline-flex;align-items:center;gap:7px;align-self:flex-start;
+    font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:999px;border:1px solid transparent;
+  }
+  .pill .dot{width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
+  .pill.good{color:var(--good);background:var(--good-soft);border-color:color-mix(in srgb,var(--good) 26%,transparent)}
+  .pill.warn{color:var(--warn);background:var(--warn-soft);border-color:color-mix(in srgb,var(--warn) 26%,transparent)}
+  .pill.crit{color:var(--crit);background:var(--crit-soft);border-color:color-mix(in srgb,var(--crit) 26%,transparent)}
+  .pill.mut{color:var(--ink-faint);background:var(--panel-2);border-color:var(--line)}
+
+  .track{height:8px;border-radius:6px;background:var(--panel-2);border:1px solid var(--line);position:relative;overflow:hidden}
+  .track .fill{position:absolute;top:0;left:0;bottom:0;border-radius:6px;transition:width .35s ease,background .3s}
+  .track .mark{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink-faint);opacity:.65}
+  .track-cap{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);margin-top:5px;font-variant-numeric:tabular-nums}
+
+  .m-fields{padding:14px 16px 4px;display:grid;grid-template-columns:1fr 1fr;gap:12px 14px}
+  .m-fields .field label{font-size:12px}
+  .m-fields .full{grid-column:1/-1}
+  .m-fields .unit{font-size:11px;color:var(--ink-faint);font-family:var(--mono)}
+  .ref-tag{font-size:10px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.08em;
+    color:var(--ink-faint);background:var(--panel-2);border:1px solid var(--line);
+    border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:middle;font-weight:600}
+  .ssd-row{padding:6px 16px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .ssd-row .ssd-lab{font-size:12px;color:var(--ink-soft);font-weight:600}
+
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;align-items:center}
+  button.btn{
+    font-family:var(--sans);font-size:14px;font-weight:600;cursor:pointer;
+    border-radius:10px;padding:10px 16px;border:1px solid var(--line-strong);
+    background:var(--panel);color:var(--ink);transition:.15s;
+  }
+  button.btn:hover{border-color:var(--accent);color:var(--accent)}
+  button.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  button.btn.primary:hover{filter:brightness(1.06);color:#fff}
+  button.btn.ghost{border-style:dashed}
+  .save-note{font-size:12.5px;color:var(--ink-faint);margin-left:auto}
+
+  /* save-success toast */
+  .save-toast{
+    display:flex;align-items:center;gap:9px;
+    margin-top:14px;padding:11px 15px;
+    background:var(--good-soft);color:var(--good);
+    border:1px solid color-mix(in srgb,var(--good) 30%,transparent);
+    border-radius:10px;font-size:13.5px;font-weight:600;
+    opacity:0;transform:translateY(-4px);
+    transition:opacity .3s ease,transform .3s ease;
+  }
+  .save-toast.show{opacity:1;transform:translateY(0)}
+  .save-toast .check{
+    flex:none;width:20px;height:20px;border-radius:50%;
+    background:var(--good);color:#fff;display:flex;align-items:center;justify-content:center;
+    font-size:13px;line-height:1;
+  }
+
+  /* method */
+  .method{margin-top:34px;padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:22px 34px}
+  .method h3{font-size:13px;margin:0 0 8px;font-weight:700}
+  .method p{margin:0 0 8px;font-size:13.5px;color:var(--ink-soft);max-width:52ch}
+  .method code{font-family:var(--mono);font-size:12.5px;background:var(--panel-2);border:1px solid var(--line);border-radius:6px;padding:1px 6px;color:var(--ink)}
+  .method .scale{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}
+  .method .scale .s{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:6px}
+  .disclaim{margin-top:20px;font-size:12px;color:var(--ink-faint);max-width:70ch}
+
+  @media (max-width:680px){
+    .bar-panel{grid-template-columns:1fr 1fr;gap:16px}
+    .bar-panel .field.wide{grid-column:1/-1}
+    .method{grid-template-columns:1fr}
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Geekbench 7 · single-core · + fio 4K</p>
+    <h1>Office-Readiness Scorecard</h1>
+    <p class="lede">One number to judge whether a machine still handles daily office work. You set the <b>bar</b> from a computer you already trust; every machine is scored against it. The bar creeps up each year as software gets heavier — this sheet does that math for you. <b>Runs the same on Debian, macOS and Windows.</b></p>
+  </header>
+
+  <section>
+    <div class="sec-head"><h2>1 · Your personal bar</h2><span class="rule"></span></div>
+    <div class="panel bar-panel">
+      <div class="field wide">
+        <label for="refScore">Reference single-core score</label>
+        <input class="mono" id="refScore" type="number" inputmode="numeric" value="1800">
+        <span class="hint">Geekbench 7 single-core of a machine you <em>know</em> feels fine today.</span>
+      </div>
+      <div class="field">
+        <label for="baseYear">Baseline year</label>
+        <input id="baseYear" type="number" inputmode="numeric" value="2026">
+      </div>
+      <div class="field">
+        <label for="creep">Yearly creep</label>
+        <input id="creep" type="number" inputmode="numeric" value="12">
+        <span class="hint">% harder each year (~10–15 typical).</span>
+      </div>
+      <div class="bar-readout">
+        <div class="metric"><span>Bar this year</span><strong id="barNow">1800</strong></div>
+        <div class="arrow">→</div>
+        <div class="metric"><span id="barNextLab">Bar in 2027</span><strong id="barNext">2016</strong></div>
+        <p class="note">A machine at <b>100</b> exactly meets today's bar. Below 80, it will feel slow for the newest software; re-check the bar the day your reference machine starts to drag.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>2 · Machines</h2><span class="rule"></span></div>
+    <div class="machines" id="machines"></div>
+    <div class="actions">
+      <button class="btn ghost" id="addBtn">+ Add machine</button>
+      <button class="btn primary" id="saveBtn">Save</button>
+      <span class="save-note" id="saveNote">Saved in this browser</span>
+    </div>
+    <div class="save-toast" id="saveToast" role="status" aria-live="polite">
+      <span class="check">✓</span>
+      <span id="saveToastMsg">Saved successfully — your machines are stored in this browser.</span>
+    </div>
+  </section>
+
+  <section class="panel method">
+    <div>
+      <h3>How the index is read</h3>
+      <p>Readiness index = <code>machine single-core ÷ your bar × 100</code>. Single-core (Geekbench 7) is what daily office responsiveness rides on — most office apps don't spread across cores.</p>
+      <div class="scale">
+        <span class="s" style="color:var(--good);background:var(--good-soft)">≥ 100 · Ready</span>
+        <span class="s" style="color:var(--warn);background:var(--warn-soft)">80–99 · Aging</span>
+        <span class="s" style="color:var(--crit);background:var(--crit-soft)">&lt; 80 · Below bar</span>
+      </div>
+    </div>
+    <div>
+      <h3>Why the SSD is scored separately</h3>
+      <p>Geekbench never touches storage, yet disk speed governs boot, app-launch and file-open snappiness. Measure random 4K read with <code>fio</code> — the same binary on both OSes (<code>apt install fio</code> / <code>brew install fio</code>).</p>
+      <div class="scale">
+        <span class="s" style="color:var(--good);background:var(--good-soft)">&gt; 30 MB/s · Fast SSD</span>
+        <span class="s" style="color:var(--warn);background:var(--warn-soft)">8–30 · Basic SSD</span>
+        <span class="s" style="color:var(--crit);background:var(--crit-soft)">&lt; 8 · Disk-bound</span>
+      </div>
+    </div>
+    <p class="disclaim" style="grid-column:1/-1">Thresholds are practical rules of thumb, not lab standards — random-4K numbers vary with queue depth, so keep the <code>fio</code> command identical on both machines. Geekbench 7 (July 2026) rebased the scale, so its scores are <b>not</b> comparable to Geekbench 6 — set your bar in GB7 and re-test both machines in GB7. GB7 scores stay comparable year to year until a future version rebases again. Example data below is illustrative, not a measurement of your machines.</p>
+  </section>
+</div>
+
+<script>
+(function(){
+  var KEY="office-readiness-v1";
+  var OSES=["macOS","Debian","Windows","ChromeOS Flex","Other"];
+  var example={
+    ref:1800, baseYear:2026, creep:12,
+    machines:[
+      {name:"Mac mini (M-series)", os:"macOS",  serial:"C02XL0AAJGH5", single:2650, multi:9800, gpu:31500, read:72},
+      {name:"Debian laptop (older)", os:"Debian", serial:"PF-2K8HR3", single:1400, multi:4200, gpu:8200, read:22}
+    ]
+  };
+  var state=load();
+
+  function load(){
+    try{var s=localStorage.getItem(KEY);if(s)return JSON.parse(s);}catch(e){}
+    return JSON.parse(JSON.stringify(example));
+  }
+  function persist(){
+    try{localStorage.setItem(KEY,JSON.stringify(state));flash("Saved in this browser");showSaveToast(true);}
+    catch(e){flash("Couldn't save (private mode?)");showSaveToast(false);}
+  }
+  var flashT;
+  function flash(msg){
+    var n=document.getElementById("saveNote");n.textContent=msg;n.style.color="var(--accent)";
+    clearTimeout(flashT);flashT=setTimeout(function(){n.textContent="Saved in this browser";n.style.color="";},1600);
+  }
+  var toastT;
+  function showSaveToast(ok){
+    var t=document.getElementById("saveToast"), m=document.getElementById("saveToastMsg");
+    var check=t.querySelector(".check");
+    if(ok){
+      m.textContent="Saved successfully — your machines are stored in this browser.";
+      t.style.background="var(--good-soft)";t.style.color="var(--good)";
+      t.style.borderColor="color-mix(in srgb,var(--good) 30%,transparent)";
+      check.style.background="var(--good)";check.textContent="✓";
+    }else{
+      m.textContent="Couldn't save — this browser may be in private mode.";
+      t.style.background="var(--crit-soft)";t.style.color="var(--crit)";
+      t.style.borderColor="color-mix(in srgb,var(--crit) 30%,transparent)";
+      check.style.background="var(--crit)";check.textContent="!";
+    }
+    t.classList.add("show");
+    clearTimeout(toastT);
+    toastT=setTimeout(function(){t.classList.remove("show");},10000);
+  }
+
+  function num(v){v=parseFloat(String(v).replace(",","."));return isFinite(v)?v:0;}
+
+  function idxClass(i){return i>=100?"good":i>=80?"warn":"crit";}
+  function idxWord(i){return i>=100?"Ready":i>=80?"Aging":"Below bar";}
+  function ssdClass(r){return r>30?"good":r>=8?"warn":"crit";}
+  function ssdWord(r){return r>30?"Fast SSD":r>=8?"Basic SSD":r>0?"Disk-bound":"—";}
+
+  function recalcBar(){
+    var ref=num(state.ref), by=Math.round(num(state.baseYear)), cr=num(state.creep)/100;
+    document.getElementById("barNow").textContent=Math.round(ref);
+    document.getElementById("barNextLab").textContent="Bar in "+(by+1);
+    document.getElementById("barNext").textContent=Math.round(ref*(1+cr));
+  }
+
+  function optionList(sel){
+    return OSES.map(function(o){return '<option'+(o===sel?' selected':'')+'>'+o+'</option>';}).join("");
+  }
+
+  // Recompute ONLY the readout of a card, leaving the input fields (and focus) untouched.
+  function updateCard(el,i){
+    var m=state.machines[i], bar=num(state.ref)||1;
+    var has=num(m.single)>0;
+    var idx=Math.round(num(m.single)/bar*100);
+    var ic=idxClass(idx), col="var(--"+ic+")", fillW=Math.max(2,Math.min(idx,140))/140*100;
+    var r=num(m.read), sc=ssdClass(r);
+    var dial=el.querySelector(".index-num");
+    dial.textContent=has?idx:"—"; dial.style.color=col;
+    var vp=el.querySelector(".v-pill");
+    vp.className="pill v-pill "+(has?ic:"mut");
+    vp.innerHTML='<span class="dot"></span>'+(has?idxWord(idx):"Enter score");
+    var fill=el.querySelector(".fill");
+    fill.style.width=fillW+"%"; fill.style.background=col;
+    var sp=el.querySelector(".ssd-pill");
+    sp.className="pill ssd-pill "+(r?sc:"mut");
+    sp.innerHTML='<span class="dot"></span>'+ssdWord(r);
+  }
+
+  function updateAllVerdicts(){
+    var cards=document.querySelectorAll("#machines .machine");
+    cards.forEach(function(el,i){updateCard(el,i);});
+  }
+
+  function render(){
+    recalcBar();
+    var host=document.getElementById("machines");
+    host.innerHTML="";
+    state.machines.forEach(function(m,i){
+      var el=document.createElement("div");
+      el.className="panel machine";
+      el.innerHTML=
+        '<div class="m-top">'+
+          '<input class="name txt" data-k="name" data-i="'+i+'" value="'+esc(m.name)+'" placeholder="Machine name">'+
+          '<button class="m-remove" data-rm="'+i+'" title="Remove" '+(state.machines.length<=1?'style="visibility:hidden"':'')+'>×</button>'+
+        '</div>'+
+        '<div class="m-os-row">'+
+          '<label class="os-lab">OS</label>'+
+          '<select class="os" data-k="os" data-i="'+i+'">'+optionList(m.os)+'</select>'+
+        '</div>'+
+        '<div class="m-verdict">'+
+          '<div class="index-dial"><div class="index-num">—</div><div class="index-lab">index</div></div>'+
+          '<div class="v-right">'+
+            '<span class="pill v-pill mut"><span class="dot"></span>Enter score</span>'+
+            '<div class="track"><div class="fill" style="width:2%"></div><div class="mark" style="left:'+(100/140*100)+'%"></div></div>'+
+            '<div class="track-cap"><span>0</span><span>100 = bar</span><span>140+</span></div>'+
+          '</div>'+
+        '</div>'+
+        '<div class="m-fields">'+
+          '<div class="field full"><label>Serial number <span class="ref-tag">reference only</span></label>'+
+            '<input class="mono" data-k="serial" data-i="'+i+'" type="text" autocomplete="off" placeholder="e.g. C02XL0AAJGH5" value="'+esc(m.serial)+'">'+
+            '<span class="hint">For your own inventory — not counted in the readiness index.</span></div>'+
+          field(i,"single","Geekbench 7 single-core")+
+          field(i,"multi","Multi-core (optional)")+
+          '<div class="field full"><label>GPU · Geekbench 7 <span class="ref-tag">reference only</span></label>'+
+            '<input class="mono" data-k="gpu" data-i="'+i+'" type="text" inputmode="numeric" autocomplete="off" value="'+esc(m.gpu)+'">'+
+            '<span class="hint">Not counted in the readiness index — kept for your Apple-vs-NVIDIA GPU comparison later.</span></div>'+
+        '</div>'+
+        '<div class="ssd-row">'+
+          '<span class="ssd-lab">SSD · fio 4K read</span>'+
+          '<input style="width:96px" class="mono" data-k="read" data-i="'+i+'" type="text" inputmode="decimal" autocomplete="off" value="'+esc(m.read)+'">'+
+          '<span class="unit" style="font-family:var(--mono);font-size:11px;color:var(--ink-faint)">MB/s</span>'+
+          '<span class="pill ssd-pill mut"><span class="dot"></span>—</span>'+
+        '</div>';
+      host.appendChild(el);
+      updateCard(el,i);
+    });
+    bindInputs();
+  }
+
+  function field(i,k,label){
+    var m=state.machines[i];
+    return '<div class="field"><label>'+label+'</label>'+
+      '<input class="mono" data-k="'+k+'" data-i="'+i+'" type="text" inputmode="numeric" autocomplete="off" value="'+esc(m[k])+'"></div>';
+  }
+  function esc(v){return String(v==null?"":v).replace(/"/g,"&quot;").replace(/</g,"&lt;");}
+
+  function bindInputs(){
+    document.querySelectorAll('#machines [data-i]').forEach(function(inp){
+      var ev=inp.tagName==="SELECT"?"change":"input";
+      inp.addEventListener(ev,function(){
+        var i=+inp.dataset.i,k=inp.dataset.k;
+        state.machines[i][k]=inp.value;
+        if(k!=="name"&&k!=="serial"&&k!=="os"){
+          // update just this card's readout — keeps focus in the field you're typing in
+          updateCard(inp.closest(".machine"),i);
+        }
+      });
+    });
+    document.querySelectorAll('#machines [data-rm]').forEach(function(b){
+      b.addEventListener("click",function(){
+        state.machines.splice(+b.dataset.rm,1);render();
+      });
+    });
+  }
+
+  ["refScore","baseYear","creep"].forEach(function(id){
+    var map={refScore:"ref",baseYear:"baseYear",creep:"creep"};
+    document.getElementById(id).addEventListener("input",function(){
+      state[map[id]]=this.value;recalcBar();updateAllVerdicts();
+    });
+  });
+
+  document.getElementById("addBtn").addEventListener("click",function(){
+    state.machines.push({name:"New machine",os:"Debian",serial:"",single:"",multi:"",gpu:"",read:""});render();
+  });
+  document.getElementById("saveBtn").addEventListener("click",persist);
+
+  // init control values from state
+  document.getElementById("refScore").value=state.ref;
+  document.getElementById("baseYear").value=state.baseYear;
+  document.getElementById("creep").value=state.creep;
+  render();
+})();
+</script>
+
+</body></html>
